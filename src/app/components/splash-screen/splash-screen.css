@@ -1,0 +1,226 @@
+
+   .fill{
+    width:50vmin;
+    height:50vmin;
+
+    border-radius:50%;
+ 
+    clip-path:circle(0% at 50% 50%);
+    transition:clip-path 400ms ease-in-out;
+  }
+   .grow{
+   
+ 
+    animation:grow2 1s ease-in-out forwards;
+  }
+ 
+   @keyframes grow2{
+ 
+    100%{
+      clip-path:circle(0% at 50% 50%);
+     
+    }   
+     90%{ 
+        
+     }
+
+    66%{
+      clip-path:circle(60% at 50% 50%);
+     
+    }
+
+    45%{
+      clip-path:circle(85% at 50% 50%);
+    }
+
+    0%{
+     
+      clip-path:circle(100% at 50% 50%);
+    }
+  }
+
+
+
+   
+
+  /* Gota que cae desde arriba hasta el centro */
+  .drop {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--drop-size);
+    height: var(--drop-size);
+    background: var(--drop-color);
+    border-radius: 50%;
+    animation: drip var(--drop-duration) ease-in 3;
+  }
+
+  .drop:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: calc(var(--drop-size) / 2) solid transparent;
+    border-right: calc(var(--drop-size) / 2) solid transparent;
+    border-bottom: calc(var(--drop-size) * 1.5) solid var(--drop-color);
+    top: calc(var(--drop-size) * -1.1);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Contenedor de ondas - centrado en el medio de la pantalla */
+  .wave-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Onda principal */
+  .wave {
+    position: absolute;
+    width: var(--wave-size);
+    height: calc(var(--wave-size));
+    border-radius: 50%;
+    border: var(--wave-border) solid var(--wave-color);
+    transform: scale(0);
+    opacity: 0;
+    animation: ripple var(--wave-duration) ease-out 3;
+    animation-delay: var(--drop-duration);
+  }
+
+  /* Capa interna de la onda principal */
+  .wave::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: calc(var(--wave-border) * 0.6) solid var(--wave-color);
+    transform: scale(0);
+    opacity: 0;
+    animation: rippleInner var(--wave-duration) ease-out 3;
+    animation-delay: var(--drop-duration);
+  }
+ 
+  /* Onda pequeña (salpicadura) */
+  .wave-small {
+    position: absolute;
+    width: var(--wave-small-size);
+    height: calc(var(--wave-small-size));
+    border-radius: 50%;
+    border: var(--wave-small-border) solid rgba(255, 255, 255, 0.9);
+    transform: scale(0);
+    opacity: 0;
+    animation: rippleSmall var(--wave-duration) ease-out 3;
+    animation-delay: calc(var(--drop-duration) + 0.15s);
+  }
+
+  /* Capa interna de la onda pequeña */
+  .wave-small::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: calc(var(--wave-small-border) * 0.6) solid rgba(255, 255, 255, 0.7);
+    transform: scale(0);
+    opacity: 0;
+    animation: rippleSmallInner var(--wave-duration) ease-out infinite;
+    animation-delay: calc(var(--drop-duration) + 0.15s);
+  }
+
+  /* Animación de la gota cayendo */
+  @keyframes drip {
+    0% {
+      top: -50px;
+      opacity: 1;
+      transform: translateX(-50%);
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      top: 50%;
+      opacity: 0;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  /* Animación de la onda principal */
+  @keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+
+  /* Animación de la capa interna */
+  @keyframes rippleInner {
+    0% {
+      transform: scale(0);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(0.7);
+      opacity: 0;
+    }
+  }
+
+  /* Animación de la onda pequeña */
+  @keyframes rippleSmall {
+    0% {
+      transform: scale(0);
+      opacity: 0.9;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+
+  /* Animación de la capa interna pequeña */
+  @keyframes rippleSmallInner {
+    0% {
+      transform: scale(0);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scale(0.7);
+      opacity: 0;
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    :root {
+      --wave-size: min(60vw, 300px);
+      --drop-duration: 1.2s;
+      --wave-duration: 1.2s;
+    }
+  }
+
+  @media (max-width: 480px) {
+    :root {
+      --wave-size: min(70vw, 200px);
+      --drop-size: 15px;
+      --drop-duration: 1s;
+      --wave-duration: 1s;
+    }
+  }
+
+
+
+
+ 
+

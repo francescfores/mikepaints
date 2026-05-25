@@ -1,90 +1,181 @@
+<app-splash-screen (animationComplete)="onSplashComplete()"></app-splash-screen>
 
-      <section class="bg-[#0C0C0C] text-white section6 flex flex-col h-[100vh] w-full gap-20 overflow-hidden relative ">
-         
+<div class="bg-bgPrim z-10 flex flex-col">
+   <app-nav></app-nav>
+   <section class="bg-[#0C0C0C] text-white section6 flex flex-col h-[100vh] w-full gap-20 overflow-hidden relative ">
 
-         <div class="framer-1ph24t6 h-[400px] " data-framer-appear-id="1ph24t6" data-framer-name="Video Desktop"
-            name="Video Desktop" >
-            <div class="framer-1e85zkz-container">
-           <section class="parallax">
-            <div class="oblique">
-             <div class="main-block-oblique skew-block">
-               <div class="skew-block-repeat ">
-                 <a  href="#">
-                   <div class="oblique-inner">
-                     <div class="image-wrapper">
-                       <div class="main-image">
-                        <img class="image-img" src="assets/mikepaints/chaman.jpg" alt="Figura 1">
-                       </div>
-                     </div>
-                   </div>
-                   <div class="justify-center items-center oblique-caption caption-top flex  flex-col">
-                                          
-                     <h1 class="holo2 warhammer-title w-full" data-text="PINTURA">
+
+      <div class="framer-1ph24t6 h-[400px] " data-framer-appear-id="1ph24t6" data-framer-name="Video Desktop" name="Video Desktop">
+         <div class="framer-1e85zkz-container">
+            <section class="parallax">
+               <div class="oblique">
+                  <div class="main-block-oblique skew-block">
+                     <div class="skew-block-repeat ">
+                        <a href="#">
+                           <div class="oblique-inner">
+                              <div class="image-wrapper">
+                                 <div class="main-image">
+                                    <img class="image-img" src="assets/mikepaints/chaman.jpg" alt="Figura 1">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="justify-center items-center oblique-caption caption-top flex  flex-col">
+
+                              <h1 class="holo2 warhammer-title w-full" data-text="PINTURA">
               PINTURA 
-            </h1> 
-            <h1 class="warhammer-title holo2 f w-full" data-text="WARGAMES">
+            </h1>
+                              <h1 class="warhammer-title holo2 f w-full" data-text="WARGAMES">
                WARGAMES
             </h1>
-                                  <button3d
-                                 class="w-[90px] "
-                                 [rounded]="'2px'" [title]="''"
-                                 [bg_front_color]="'#fff'"
-                                 [font_color]="'#FF5900'"
-                                 [bg_back_color]="'#752900'"
-                                 [border_style]="'solid #FF5900 var(--border)'"
-                                 font_size="18px" [font_body_weight]="'900'"  [height]="'35px'"
-                                  [raise]="3">
+                              <button3d class="w-[90px] " [rounded]="'2px'" [title]="''" [bg_front_color]="'#fff'" [font_color]="'#FF5900'" [bg_back_color]="'#752900'" [border_style]="'solid #FF5900 '" font_size="18px" [font_body_weight]="'900'" [height]="'35px'" [raise]="3">
                                  <a href="#about" role="button">
                                     <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
                                        <p>info</p>
                                     </div>
                                  </a>
-                                 </button3d>
-                               </div>
-                             </a>
+                              </button3d>
+                              <button3d class="hidden w-[90px] " [border_style]="'solid'" [type]="'btn_primary'" [title]="''" font_size="18px" [font_body_weight]="'900'" [height]="'35px'" [raise]="3">
+                                 <a href="#about" role="button">
+                                    <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
+                                       <p>info</p>
+                                    </div>
+                                 </a>
+                              </button3d>
                            </div>
-                           <div class="skew-block-repeat">
-                             <a href="#">
-                               <div class="oblique-inner">
-                                 <div class="image-wrapper">
-                                   <div class="main-image">
-                                    
+                        </a>
+                     </div>
+                     <div class="skew-block-repeat">
+                        <a href="#">
+                           <div class="oblique-inner">
+                              <div class="image-wrapper">
+                                 <div class="main-image">
+
                                     <img class="image-img" src="assets/mikepaints/goku.jpg" alt="Figura 1">
-                                   </div>
                                  </div>
-                               </div>
-                               <div class="justify-center items-center oblique-caption caption-top flex gap-0 flex-col">
-                                 <h1 class="holo rushdrive w-full" data-text="PINTURA">
+                              </div>
+                           </div>
+                           <div class="justify-center items-center oblique-caption caption-top flex gap-0 flex-col">
+                              <h1 class="holo rushdrive w-full" data-text="PINTURA">
               PINTURA 
             </h1>
-            <h1 class="holo rushdrive w-full" data-text="RESINAS">
+                              <h1 class="holo rushdrive w-full" data-text="RESINAS">
                RESINAS
             </h1>
-                     <button3d
-                     class="w-[90px] "
-                     [rounded]="'2px'" [title]="''"
-                     [bg_front_color]="'#fff'"
-                     [font_color]="'#57DDFF'"
-                     [bg_back_color]="'#003947'"
-                     [border_style]="'solid #00A7D1 var(--border)'"
-                     font_size="18px" [font_body_weight]="'900'"  [height]="'35px'"
-                      [raise]="3">
-                     <a href="#about" role="button">
-                        <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
-                           <p>info</p>
-                        </div>
-                     </a>
-                     </button3d>
-                   </div>
-                 </a>
+                              <button3d class="w-[90px] " [rounded]="'2px'" [title]="''" [bg_front_color]="'#fff'" [font_color]="'#57DDFF'" [bg_back_color]="'#003947'" [border_style]="'solid #00A7D1 '" font_size="18px" [font_body_weight]="'900'" [height]="'35px'" [raise]="3">
+                                 <a href="#about" role="button">
+                                    <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
+                                       <p>info</p>
+                                    </div>
+                                 </a>
+                              </button3d>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
                </div>
-             </div>
-           </div>
 
-           </section>
+            </section>
 
-     
-               </div>
+
          </div>
-      </section>
-   
+      </div>
+   </section>
+   <section class="mx-auto fade-in-up max-w-screen-2xl md:mt-10 px-4 pt-20 md:px-20  w-full flex  justify-center items-center  gap-8 flex-col text-center">
+      <div class="w-full flex flex-col gap-8 items-center">
+         <p class="text-3xl md:text-7xl font-semibold">Pintura, resina y <br> creación de piezas únicas</p>
+      </div>
+      <div class="w-full flex flex-col gap-8 w-1/2 items-center text-xl">
+
+         <p>
+            Creamos figuras, piezas custom e impresiones 3D en resina para wargames y coleccionismo, <br> combinando experiencia en pintura, detalle y producción de alta calidad.
+         </p>
+
+
+      </div>
+   </section>
+   <section class="mx-auto max-w-screen-2xl px-4 py-20 md:px-20  w-full flex relative  section2_animation animate-fade-in-up animate-delay-200 animate-duration-600">
+      <div class="flex relative w-full justify-center items-start">
+         <div class="opacity-0 md:opacity-100 w-2/6 div1  -mr-20 mt-10   z-20  ">
+            <img loading="lazy" decoding="async" width="463" height="800" src="https://paintforge.es/wp-content/uploads/2023/06/link_nobkg.png" class="wp-image-1178" alt="The Legend of Zelda: Breath of the Wild / Tears of the Kingdom de Emanuel Skorepa - pintura Fran López Payá (PaintForge)" title="The Legend of Zelda: Breath of the Wild / Tears of the Kingdom de Emanuel Skorepa – pintura Fran López Payá (PaintForge)" srcset="https://paintforge.es/wp-content/uploads/2023/06/link_nobkg.png 463w, https://paintforge.es/wp-content/uploads/2023/06/link_nobkg-174x300.png 174w" sizes="(max-width: 463px) 100vw, 463px">
+         </div>
+         <div class="div2 w-full relative">
+            <img class="  test2 rounded z-10 relative" src="/assets/mikepaints/marioybowser.png" alt="">
+
+
+            <video class="hidden test2 framer-zxpwxw2 border border-textPrimary/70  rounded z-10 relative">
+                      <source type="video/webm"
+                              src="/assets/mikepaints/videos/enano.mp4">
+                    </video>
+         </div>
+         <div class="opacity-0 md:opacity-100 w-2/6 div3 -ml-20  mt-10 z-20  ">
+            <img loading="lazy" decoding="async" width="512" height="788" src="https://paintforge.es/wp-content/uploads/2023/06/ogro_nobkg.png" alt="Draak'll de @heramodels_minis pintado por Fran López Payá (PaintForge)" title="Draak'll de @heramodels_minis pintado por Fran López Payá (PaintForge)" srcset="https://paintforge.es/wp-content/uploads/2023/06/ogro_nobkg.png 512w, https://paintforge.es/wp-content/uploads/2023/06/ogro_nobkg-480x739.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 512px, 100vw" class="wp-image-1157">
+         </div>
+
+      </div>
+   </section>
+   <section class="mx-auto max-w-screen-2xl px-4 py-10 md:px-20 w-full flex relative    flex-col justify-end items-center
+               section3_animation  overflow-x-hidden gap-4">
+      <div class=" absolute mask w-full  h-full flex bg-bgPrim z-10">
+      </div>
+      <div id="wargames" class="w-full flex flex-col md:flex-row h-full   justify-end">
+         <div class="w-full md:w-6/12  flex flex-col gap-2 z-50   text-center md:text-start justify-center items-center md:items-start  ">
+            <p class="banco font-bold text-5xl mb-5" style=" background: linear-gradient(hsl(var(--twc-secondary)),hsl(var(--twc-primary)));
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;">Pintura wargames</p>
+            <p class="hidden font-semibold text-3xl">La Petja Skate Club</p>
+            <p class="flex">En esta sección encontrarás trabajos de pintura para wargames y miniaturas de colección, desde acabados tabletop rápidos y funcionales para juego hasta proyectos premium y de vitrina con un alto nivel de detalle. Cada encargo se adapta al objetivo del cliente, cuidando siempre la calidad, la coherencia del esquema de color y el impacto visual de la pieza, ya sea para mesa de juego, exposición o colección.</p>
+            <div class="flex flex-wrap gap-2 mt-6 justify-center md:justify-start ">
+               <a href="contact" class=" hidden p-1 rounded border border-textPrimary/80">
+                  <p>Contacto</p>
+
+               </a>
+               <button3d class="w-[100px] mt-5" [rounded]="'4px'" [title]="''" [bg_front_color]="'#E03E3E'" [font_color]="'#fff'" [bg_back_color]="'#9E1A1A'" [border_style]="'solid #E87373 var(--border)'" font_size="12px" [font_body_weight]="'900'" [height]="'25px'" [width]="'100%'" [raise]="4">
+                  <a role="button" href="#contact">
+                     <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
+                        <p>Contacto</p>
+                     </div>
+                  </a>
+               </button3d>
+
+            </div>
+         </div>
+         <div class="hidden md:flex md:w-6/12  gap-4 md:flex-col mt-auto  ">
+            <div class="ml-24 div1  gap-4  flex h-[132px] md:h-[264px]">
+               <img class="border border-textPrimary/70 max-w-none rounded  h-full  w-[180px] md:w-[400px]" src="./assets/images/lapetja/116869516_1818330931678610_3379788262220538131_n.jpg" alt="Framer template">
+               <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="./assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer template">
+               <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="./assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer template">
+               <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="./assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer template">
+               <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="./assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer template">
+            </div>
+            <div class="div2 gap-4  flex  h-[132px] md:h-[264px]">
+               <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/305961087_2478537202324643_3127253823362828421_n.jpg" alt="Framer template">
+               <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="./assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer template">
+               <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="./assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer template">
+               <img class="border border-textPrimary/70 max-w-none rounded  h-full  w-[180px] md:w-[400px]" src="./assets/images/lapetja/116869516_1818330931678610_3379788262220538131_n.jpg" alt="Framer template">
+               <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="./assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" alt="Framer template">
+            </div>
+         </div>
+      </div>
+      <div class="w-[140vh] div3 gap-4 flex h-[132px] md:h-[264px] ">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/170245615_2044978532347181_7666490010210381600_n.jpg" alt="Framer template">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/358686724_1005681253886802_6691392218711406634_n.jpg" alt="Framer template">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="./assets/images/lapetja/198684836_2097520570426310_3624404012612936900_n.jpg" alt="Framer template">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/208508193_2111451865699847_2477656309644796735_n.jpg" alt="Framer template">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/170245615_2044978532347181_7666490010210381600_n.jpg" alt="Framer template">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/378822244_1048519592936301_505277086442360844_n.jpg" alt="Framer template">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/170245615_2044978532347181_7666490010210381600_n.jpg" alt="Framer template">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/170245615_2044978532347181_7666490010210381600_n.jpg" alt="Framer template">
+      </div>
+      <div class="w-[140vh] test div4 gap-4 flex  h-[132px] md:h-[264px] ">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/448001959_1219636512491274_6362056245516501055_n.jpg" alt="Framer template">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/378822244_1048519592936301_505277086442360844_n.jpg" alt="Framer template">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/448001959_1219636512491274_6362056245516501055_n.jpg" alt="Framer template">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="/assets/images/lapetja/378822244_1048519592936301_505277086442360844_n.jpg" alt="Framer template"><img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="https://framerusercontent.com/images/8MCGPagnE5ASvd2v5wHOnEp8.png" alt="Framer template">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="https://framerusercontent.com/images/1TkbzJGLWuBG0Jh1iXMwYmPR8s.png" alt="Framer template">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="https://framerusercontent.com/images/1TkbzJGLWuBG0Jh1iXMwYmPR8s.png" alt="Framer template">
+         <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="https://framerusercontent.com/images/1TkbzJGLWuBG0Jh1iXMwYmPR8s.png" alt="Framer template">
+      </div>
+   </section>
+
+</div>
