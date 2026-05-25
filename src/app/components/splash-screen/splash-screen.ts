@@ -42,37 +42,23 @@ export class SplashScreen implements AfterViewInit {
 
     let i = 0;
 
-    const runStep = () => {
-
+      const runStep = () => {
       if (i >= steps.length) return;
 
       const maxWave = Math.min(window.innerWidth * 0.4, 400);
-
+      
+      // IMPORTANTE: steps2[i] debería ser un valor entre 0 y 1
+      // Si steps2 = [1, 3, 4], esto dará 400, 1200, 1600px (demasiado grande)
       const waveSizePx = steps2[i] * maxWave;
 
-      this.renderer.setStyle(
-        el,
-        'clip-path',
-        steps[i]
-      );
-
-      this.renderer.setStyle(
-        root,
-        '--wave-size',
-        `${waveSizePx}px`
-      );
-
-      this.renderer.setStyle(
-        root,
-        '--wave-small-size',
-        `${waveSizePx * 0.9}px` 
-      );
+      // Usar setProperty directamente en lugar de renderer
+      el.style.clipPath = steps[i];
+      root.style.setProperty('--wave-size', `${waveSizePx}px`);
+      root.style.setProperty('--wave-small-size', `${waveSizePx * 0.7}px`);
 
       i++;
-
       setTimeout(runStep, 1200);
     };
-
     setTimeout(runStep, 700);
 
     const runStep2 = () => {
