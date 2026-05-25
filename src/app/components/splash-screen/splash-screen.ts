@@ -32,7 +32,7 @@ export class SplashScreen implements AfterViewInit {
 
     const root = document.documentElement;
 
-    const steps2 = [1, 1.6, 2]; 
+    const steps2 = [1, 2.2, 2.5]; 
 
     const steps =  [
       'circle(10% at 50% 50%)',
