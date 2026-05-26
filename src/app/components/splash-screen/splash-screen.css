@@ -114,7 +114,7 @@
     width: var(--wave-small-size);
     height: calc(var(--wave-small-size));
     border-radius: 50%;
-    border: var(--wave-small-border) solid rgba(255, 255, 255, 0.9);
+    border: var(--wave-small-border) solid var(--wave-small-color);
     transform: scale(0);
     opacity: 0;
     animation: rippleSmall var(--wave-duration) ease-out 3;
@@ -129,7 +129,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: calc(var(--wave-small-border) * 0.6) solid rgba(255, 255, 255, 0.7);
+    border: calc(var(--wave-small-border) * 0.6) solid var(--wave-small-color);
     transform: scale(0);
     opacity: 0;
     animation: rippleSmallInner var(--wave-duration) ease-out infinite;

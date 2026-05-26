@@ -136,10 +136,10 @@ ou can add global styles to this file, and also import other style files */
 
 
  /* Colores */
-    --bg-color: #fff;
-    --drop-color: #fff;
-    --wave-color: #fff;
-    
+    --bg-color: #FF6D00;
+    --drop-color: #FF6D00;
+    --wave-color: #FF6D00;
+    --wave-small-color: #FF6D00;
     /* Tamaños */
     --drop-size: 20px;
     --wave-size: min(40vw, 400px);
@@ -152,7 +152,7 @@ ou can add global styles to this file, and also import other style files */
     /* Velocidades - Sincronizadas */
     --drop-duration: 1s;
     --wave-duration: 1s; 
-    --bg:#fff; 
+    --bg:#FF6D00; 
     --color:#fff; 
     --dur:1s;
 }

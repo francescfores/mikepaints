@@ -3,7 +3,7 @@ import {
   Component,
   ElementRef,
   Renderer2,
-  Output, EventEmitter } from '@angular/core';
+  Output, EventEmitter,ViewChild,OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-splash-screen',
@@ -12,6 +12,21 @@ import {
   styleUrl: './splash-screen.css',
 })
 export class SplashScreen implements AfterViewInit {
+   @ViewChild('audioPlayer') audioPlayer!: ElementRef<HTMLAudioElement>;
+
+  playWaterDropSegment(startSeconds: number = 0, endSeconds: number = 0.5) {
+    const audio = this.audioPlayer.nativeElement;
+    
+    audio.currentTime = startSeconds;
+    audio.play();
+    
+    // Detener después de X segundos
+    setTimeout(() => {
+      audio.pause();
+      audio.currentTime = 0;
+    }, (endSeconds - startSeconds) * 1000);
+  }
+
   @Output() animationComplete = new EventEmitter<void>();
 
   constructor(
@@ -20,6 +35,7 @@ export class SplashScreen implements AfterViewInit {
   ) {}
 
   ngAfterViewInit(): void {
+    this.playWaterDropSegment(0, 0.5);
 
     const el: HTMLElement =
       this.elRef.nativeElement.querySelector('.fill');
@@ -73,4 +89,6 @@ export class SplashScreen implements AfterViewInit {
  
     setTimeout(runStep2, 3000);
   }
+
+
 }
