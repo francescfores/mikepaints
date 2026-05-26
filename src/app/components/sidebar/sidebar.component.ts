@@ -90,7 +90,7 @@ export class SidebarComponent implements OnInit,AfterViewInit {
     //console.log(document.documentElement.scrollTop)
     if(!this.isDarkEnable){
     if (scrollDistance > 0) {
-      $('.moon_sun').css("fill", "hsl(var(--twc-textPrimary))");
+      $('.moon_sun').css("fill", "var(--color-textPrimary)");
     }
 
       $('.moon_sun g circle').css("transform", "scale(1)");
@@ -106,7 +106,7 @@ export class SidebarComponent implements OnInit,AfterViewInit {
       $('.moon_sun > circle').attr("r", "5");
     }else{
           if (scrollDistance > 0) {
-      $('.moon_sun').css("fill", "hsl(var(--twc-textPrimary))");
+      $('.moon_sun').css("fill", "var(--color-textPrimary)");
     }
       $('.moon_sun g circle').css("transform", "scale(0)");
       $('.moon_sun').css("transform", "rotate(90deg)");
@@ -131,7 +131,9 @@ export class SidebarComponent implements OnInit,AfterViewInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: Event): void {
-    //if(!this.sidebarOpen){
+   if(this.sidebarOpen){
+
+    }
       this.detectScrollDirection();
       const scrollPosition = window.scrollY || document.documentElement.scrollTop;
       if (scrollPosition === 0) {
@@ -154,25 +156,28 @@ export class SidebarComponent implements OnInit,AfterViewInit {
     //console.log(document.documentElement.scrollTop)
     this.scrollDistance=scrollDistance;
     if (scrollDistance === 0) {
-      $('.moon_sun').css("fill", "#fff");
-      $('.logo').css("fill", "#fff");
-      //$('#navbar').addClass('bg-transparent');
-      $('#navbar').addClass('text-white');
-      $('#logo').addClass('fill-white');
+     // $('.moon_sun').css("fill", "#fff");
+      //$('.logo').css("fill", "#fff");
+      //$('#navbar').removeClass('opacity-95');
+      //$('#navbar').addClass('opacity-70');
+      //$('#navbar').addClass('text-white');
+      //$('#logo').addClass('fill-white');
     }else{
-      $('.moon_sun').css("fill", "hsl(var(--twc-textPrimary))");
-      $('#navbar').removeClass('bg-transparent');
-      $('#navbar').removeClass('text-white');
-      $('#logo').removeClass('fill-white');
-      $('.logo').css("fill", "hsl(var(--twc-textPrimary))");
+      //$('#navbar').removeClass('opacity-70');
+      //$('#navbar').addClass('opacity-95');
+      //$('.moon_sun').css("fill", "var(--color-textPrimary)");
+      //$('#navbar').removeClass('bg-transparent');
+      //$('#navbar').removeClass('text-white');
+      //$('#logo').removeClass('fill-white');
+      //$('.logo').css("fill", "var(--color-textPrimary)");
 
     }
-    if (currentScrollPosition > this.lastScrollPosition && scrollDistance > 0) {
-      $('#navbar').addClass('-translate-y-16');
+    if (currentScrollPosition > this.lastScrollPosition && scrollDistance > 0  && !this.sidebarOpen) {
+      $('#navbar').addClass('-translate-y-20');
     }
     if (currentScrollPosition < this.lastScrollPosition && scrollDistance > 0) {
       // Scroll hacia arriba
-      $('#navbar').removeClass('-translate-y-16');
+      $('#navbar').removeClass('-translate-y-20');
     }
     this.lastScrollPosition = currentScrollPosition;
   }

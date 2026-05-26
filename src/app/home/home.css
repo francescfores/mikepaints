@@ -614,6 +614,8 @@ Colores y animaciones por panel */
   max-height: 100%;
   vertical-align: middle;
   border: 0;
+   /* Centra la imagen */
+
 }
 .oblique .skew-block-repeat a .oblique-caption {
   position: absolute;

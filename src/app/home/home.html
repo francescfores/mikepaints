@@ -1,13 +1,17 @@
 <app-splash-screen (animationComplete)="onSplashComplete()"></app-splash-screen>
 
-<div  class="relative w-full min-h-screen text-textPrimary bg-bgPrim">
-<app-sidebar-blog></app-sidebar-blog>
 
-   <main class="relative bg-bgPrim flex justify-center items-center w-full flex-col z-0 overflow-hidden">
+
+
+<app-sidebar-blog ></app-sidebar-blog>
+
+
+
+
+<main [ngClass]="{ 'h-[100vh]': showSplash}" class="relative bg-bgPrim flex justify-center items-center w-full flex-col z-0 overflow-hidden">
       
 
-   <app-nav></app-nav>
-   <section class="bg-[#0C0C0C] text-white section6 flex flex-col h-[100vh] w-full gap-20 overflow-hidden relative ">
+   <section class="bg-[#0C0C0C] text-white section6 flex flex-col h-[100vh] w-full gap-20 scrollbar-thumb-sky-700 scrollbar-track-sky-100 overflow-auto relative ">
 
 
       <div class="framer-1ph24t6 h-[400px] " data-framer-appear-id="1ph24t6" data-framer-name="Video Desktop" name="Video Desktop">
@@ -20,18 +24,18 @@
                            <div class="oblique-inner">
                               <div class="image-wrapper">
                                  <div class="main-image">
-                                    <img class="image-img" src="assets/mikepaints/chaman.jpg" alt="Figura 1">
+                                    <img style="object-position: top;" class="image-img" src="assets/mikepaints/images/minotauro.jpeg" alt="Figura 1">
                                  </div>
                               </div>
                            </div>
                            <div class="justify-center items-center oblique-caption caption-top flex  flex-col">
 
                               <h1 class="holo2 warhammer-title w-full" data-text="PINTURA">
-              PINTURA 
-            </h1>
+                                PINTURA 
+                              </h1>
                               <h1 class="warhammer-title holo2 f w-full" data-text="WARGAMES">
-               WARGAMES
-            </h1>
+                                 WARGAMES
+                              </h1>
                               <button3d class="w-[90px] " [rounded]="'2px'" [title]="''" [bg_front_color]="'#fff'" [font_color]="'#FF5900'" [bg_back_color]="'#752900'" [border_style]="'solid #FF5900 '" font_size="18px" [font_body_weight]="'900'" [height]="'35px'" [raise]="3">
                                  <a href="#about" role="button">
                                     <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
@@ -61,11 +65,11 @@
                            </div>
                            <div class="justify-center items-center oblique-caption caption-top flex gap-0 flex-col">
                               <h1 class="holo rushdrive w-full" data-text="PINTURA">
-              PINTURA 
-            </h1>
+                                PINTURA 
+                              </h1>
                               <h1 class="holo rushdrive w-full" data-text="RESINAS">
-               RESINAS
-            </h1>
+                                 RESINAS
+                              </h1>
                               <button3d class="w-[90px] " [rounded]="'2px'" [title]="''" [bg_front_color]="'#fff'" [font_color]="'#57DDFF'" [bg_back_color]="'#003947'" [border_style]="'solid #00A7D1 '" font_size="18px" [font_body_weight]="'900'" [height]="'35px'" [raise]="3">
                                  <a href="#about" role="button">
                                     <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
@@ -100,11 +104,13 @@
    </section>
    <section class="mx-auto max-w-screen-2xl px-4 py-20 md:px-20  w-full flex relative  section2_animation animate-fade-in-up animate-delay-200 animate-duration-600">
       <div class="flex relative w-full justify-center items-start">
-         <div class="opacity-0 md:opacity-100 w-2/6 div1  -mr-20 mt-10   z-20  ">
-            <img loading="lazy" decoding="async" width="463" height="800" src="https://paintforge.es/wp-content/uploads/2023/06/link_nobkg.png" class="wp-image-1178" alt="The Legend of Zelda: Breath of the Wild / Tears of the Kingdom de Emanuel Skorepa - pintura Fran López Payá (PaintForge)" title="The Legend of Zelda: Breath of the Wild / Tears of the Kingdom de Emanuel Skorepa – pintura Fran López Payá (PaintForge)" srcset="https://paintforge.es/wp-content/uploads/2023/06/link_nobkg.png 463w, https://paintforge.es/wp-content/uploads/2023/06/link_nobkg-174x300.png 174w" sizes="(max-width: 463px) 100vw, 463px">
+         <div class=" md:flex w-2/6 div1  -mr-20 mt-10   z-20  ">
+         
+            <img class="  test2 rounded z-10 relative" src="assets/mikepaints/images/minotauro-Photoroom.png" alt="">
+
          </div>
-         <div class="div2 w-full relative">
-            <img class="  test2 rounded z-10 relative" src="/assets/mikepaints/marioybowser.png" alt="">
+         <div class="div2 w-1/2 relative">
+            <img class="  test2 rounded z-10 relative" src="/assets/mikepaints/images/jiraya-Photoroom.png" alt="">
 
 
             <video class="hidden test2 framer-zxpwxw2 border border-textPrimary/70  rounded z-10 relative">
@@ -112,13 +118,14 @@
                               src="/assets/mikepaints/videos/enano.mp4">
                     </video>
          </div>
-         <div class="opacity-0 md:opacity-100 w-2/6 div3 -ml-20  mt-10 z-20  ">
-            <img loading="lazy" decoding="async" width="512" height="788" src="https://paintforge.es/wp-content/uploads/2023/06/ogro_nobkg.png" alt="Draak'll de @heramodels_minis pintado por Fran López Payá (PaintForge)" title="Draak'll de @heramodels_minis pintado por Fran López Payá (PaintForge)" srcset="https://paintforge.es/wp-content/uploads/2023/06/ogro_nobkg.png 512w, https://paintforge.es/wp-content/uploads/2023/06/ogro_nobkg-480x739.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 512px, 100vw" class="wp-image-1157">
+         <div class="w-2/6 div3 -ml-20 z-20  ">
+                     <img class="  test2 rounded z-10 relative" src="/assets/mikepaints/images/mewtwo-Photoroom.png" alt="">
+
          </div>
 
       </div>
    </section>
-   <section class="mx-auto max-w-screen-2xl px-4 py-10 md:px-20 w-full flex relative    flex-col justify-end items-center
+   <section class="hidden mx-auto max-w-screen-2xl px-4 py-10 md:px-20 w-full flex relative    flex-col justify-end items-center
                section3_animation  overflow-x-hidden gap-4">
       <div class=" absolute mask w-full  h-full flex bg-bgPrim z-10">
       </div>
@@ -182,5 +189,4 @@
          <img class="border border-textPrimary/70 max-w-none rounded  h-full w-[180px] md:w-[400px]" src="https://framerusercontent.com/images/1TkbzJGLWuBG0Jh1iXMwYmPR8s.png" alt="Framer template">
       </div>
    </section>
-
 </main>

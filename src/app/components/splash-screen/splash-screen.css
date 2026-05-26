@@ -129,7 +129,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: calc(var(--wave-small-border) * 0.6) solid var(--wave-small-color);
+    border: calc(var(--wave-small-border) * 0.6) solid var(--wave-color);
     transform: scale(0);
     opacity: 0;
     animation: rippleSmallInner var(--wave-duration) ease-out infinite;

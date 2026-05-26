@@ -5,14 +5,34 @@
 ou can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+@plugin "tailwind-scrollbar";
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #10161A;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 @theme {
   /* LIGHT */
-  --primary: #FCEEEE;
-  --color-primary: #FCEEEE;
+  --color-primary: #991B1B;
   --color-secondary: #36827F;
   --color-ter: #FFBE0B;
 
-  --color-bgPrim: #FBF5F3;
+  --color-bgPrim: #FAF7EF;
   --color-bgSeco: #FAF2F0;
 
   --color-textPrimary: #252525;
@@ -21,7 +41,7 @@ ou can add global styles to this file, and also import other style files */
 
 /* DARK MODE */
 .dark {
-  --color-primary: #E03E3E;
+  --color-primary: #991B1B;
   --color-secondary: #E0AB3F;
 
   --color-bgPrim: #10161A;

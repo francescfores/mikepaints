@@ -1,27 +1,32 @@
-import { Component } from '@angular/core';
+import { Component,AfterViewInit } from '@angular/core';
 import { Button3dComponent} from 'button3d';
 import { Nav} from '../components/nav/nav';
 import { SidebarComponent} from '../components/sidebar/sidebar.component';
 import { SplashScreen} from '../components/splash-screen/splash-screen';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   imports: [
     Button3dComponent,
     Nav,
+    CommonModule,
     SplashScreen,
   SidebarComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
 export class Home {
-  
+  showSplash = false 
   constructor() {
-    this.disableScroll();
+    this.showSplash = true 
+    
+
   }
 
   onSplashComplete() { 
-    this.enableScroll();
+    this.showSplash =false ;
+
   }
 
   private disableScroll() {
