@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Button3dComponent} from 'button3d';
 import { Nav} from '../components/nav/nav';
+import { SidebarComponent} from '../components/sidebar/sidebar.component';
 import { SplashScreen} from '../components/splash-screen/splash-screen';
 
 @Component({
@@ -8,7 +9,8 @@ import { SplashScreen} from '../components/splash-screen/splash-screen';
   imports: [
     Button3dComponent,
     Nav,
-    SplashScreen],
+    SplashScreen,
+  SidebarComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
@@ -18,7 +20,7 @@ export class Home {
     this.disableScroll();
   }
 
-  onSplashComplete() {
+  onSplashComplete() { 
     this.enableScroll();
   }
 

@@ -7,11 +7,13 @@ ou can add global styles to this file, and also import other style files */
 @import 'tailwindcss';
 @theme {
   /* LIGHT */
-  --color-primary: #E03E3E;
-  --color-secondary: #E0AB3F;
+  --primary: #FCEEEE;
+  --color-primary: #FCEEEE;
+  --color-secondary: #36827F;
+  --color-ter: #FFBE0B;
 
-  --color-bgPrim: #F0F4F9;
-  --color-bgSeco: #f1f1f1;
+  --color-bgPrim: #FBF5F3;
+  --color-bgSeco: #FAF2F0;
 
   --color-textPrimary: #252525;
   --color-textSecondary: #656565;
@@ -22,7 +24,7 @@ ou can add global styles to this file, and also import other style files */
   --color-primary: #E03E3E;
   --color-secondary: #E0AB3F;
 
-  --color-bgPrim: #0C0C0C;
+  --color-bgPrim: #10161A;
   --color-bgSeco: #141f38;
 
   --color-textPrimary: #FFFFFF;
@@ -136,10 +138,10 @@ ou can add global styles to this file, and also import other style files */
 
 
  /* Colores */
-    --bg-color: #FF6D00;
-    --drop-color: #FF6D00;
-    --wave-color: #FF6D00;
-    --wave-small-color: #FF6D00;
+    --bg-color: #991b1b;
+    --drop-color: #991b1b;
+    --wave-color: #991b1b;
+    --wave-small-color: #991b1b;
     /* Tamaños */
     --drop-size: 20px;
     --wave-size: min(40vw, 400px);

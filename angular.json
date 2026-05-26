@@ -29,6 +29,12 @@
             ],
             "styles": [
               "src/styles.css"
+            ],
+            "allowedCommonJsDependencies": [
+              "jquery",
+            ],
+            "scripts" :[
+              "node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {
@@ -65,7 +71,10 @@
               "buildTarget": "mikepaints:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "scripts" :[
+              "node_modules/jquery/dist/jquery.min.js"
+            ],
+          "defaultConfiguration": "development",
         },
         "test": {
           "builder": "@angular/build:unit-test"

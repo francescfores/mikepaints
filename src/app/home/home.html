@@ -1,6 +1,11 @@
 <app-splash-screen (animationComplete)="onSplashComplete()"></app-splash-screen>
 
-<div class="bg-bgPrim z-10 flex flex-col">
+<div  class="relative w-full min-h-screen text-textPrimary bg-bgPrim">
+<app-sidebar-blog></app-sidebar-blog>
+
+   <main class="relative bg-bgPrim flex justify-center items-center w-full flex-col z-0 overflow-hidden">
+      
+
    <app-nav></app-nav>
    <section class="bg-[#0C0C0C] text-white section6 flex flex-col h-[100vh] w-full gap-20 overflow-hidden relative ">
 
@@ -119,7 +124,7 @@
       </div>
       <div id="wargames" class="w-full flex flex-col md:flex-row h-full   justify-end">
          <div class="w-full md:w-6/12  flex flex-col gap-2 z-50   text-center md:text-start justify-center items-center md:items-start  ">
-            <p class="banco font-bold text-5xl mb-5" style=" background: linear-gradient(hsl(var(--twc-secondary)),hsl(var(--twc-primary)));
+            <p class="banco font-bold text-5xl mb-5" style=" background: linear-gradient(180deg,rgba(105, 0, 0, 1) 0%, rgba(253, 29, 29, 1) 76%, rgba(252, 221, 69, 1) 100%);
                         -webkit-background-clip: text;
                         background-clip: text;
                         -webkit-text-fill-color: transparent;">Pintura wargames</p>
@@ -178,4 +183,4 @@
       </div>
    </section>
 
-</div>
+</main>
