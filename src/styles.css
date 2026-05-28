@@ -28,21 +28,31 @@ ou can add global styles to this file, and also import other style files */
 }
 @theme {
   /* LIGHT */
-  --color-primary: #991B1B;
-  --color-secondary: #36827F;
-  --color-ter: #FFBE0B;
+  --color-primary: #690001;
+  --color-secondary: #FF9847;
+  --color-tertiary: #36827F;
 
-  --color-bgPrim: #FAF7EF;
+  --color-bgPrim: #FFFEFA;
   --color-bgSeco: #FAF2F0;
 
   --color-textPrimary: #252525;
   --color-textSecondary: #656565;
+
+  --breakpoint-*: initial;           /* Borra todos los defaults */
+  --breakpoint-xs: 30rem;            /* 480px */
+  --breakpoint-sm: 40rem;            /* 640px */
+  --breakpoint-md: 48rem;            /* 768px */
+  --breakpoint-lg: 64rem;            /* 1024px */
+  --breakpoint-xl: 80rem;            /* 1280px */
+  --breakpoint-2xl: 100rem;          /* 1600px */
+  --breakpoint-3xl: 120rem;          /* 1920px */
 }
 
 /* DARK MODE */
 .dark {
-  --color-primary: #991B1B;
-  --color-secondary: #E0AB3F;
+  --color-primary: #690001;
+  --color-secondary: #FF9847;
+  --color-tertiary: #36827F;
 
   --color-bgPrim: #10161A;
   --color-bgSeco: #141f38;
@@ -116,6 +126,48 @@ ou can add global styles to this file, and also import other style files */
 :root {
 
 /* Todas las clases fuera de :root */
+
+.btn_primary {
+  --border_style: solid #853F0F var(--border);
+  --bg_front_color: #FF9847;
+  --bg_shadow_color: #4B4B4B20;
+  --bg_back_color: #853F0F;
+  --font_color: var(--color-textPrimary);
+}
+
+.btn_secondary {
+  --bg_shadow_color: #4B4B4B84;
+  --bg_front_color: #fffbb5;
+  --bg_back_color: #4e6a6b;
+  --border_style: solid #5c8486 var(--border);
+  --font_color: #20201e;
+}
+
+.btn_anchor {
+  --border_style: solid #404040 var(--border);
+  --bg_front_color: #ececec;
+  --bg_shadow_color: #4B4B4B84;
+  --bg_back_color: #313131;
+  --font_color: #7f4997;
+}
+
+.btn_danger {
+  --border_style: solid #d2f3af var(--border);
+  --bg_front_color: #8B3357;
+  --bg_shadow_color: #4B4B4B84;
+  --bg_back_color: #afca92;
+  --font_color: #fff;
+}
+
+.btn_disabled {
+  --border_style: solid #FF9847 var(--border);
+  --bg_front_color: var(--color-bgPrim);
+  --bg_shadow_color: #4B4B4B84;
+  --bg_back_color: #853F0F;
+  --font_color: var(--color-textPrimary);
+}
+
+/* 
 .btn_primary {
   --border_style: solid #b84a41 var(--border);
   --bg_front_color: #338a9d;
@@ -157,6 +209,47 @@ ou can add global styles to this file, and also import other style files */
 }
 
 
+
+.btn_primary {
+  --border_style: solid #69b5e0 var(--border);
+  --bg_front_color: #AAD3EA;
+  --bg_shadow_color: #4B4B4B20;
+  --bg_back_color: #57A9D4;
+  --font_color: #2875A0;
+}
+
+.btn_secondary {
+  --border_style: solid #b3e5e1 var(--border);
+  --bg_front_color: #FAFAFA;
+  --bg_shadow_color: #4B4B4B84;
+  --bg_back_color: #349890;
+  --font_color: #1A4C48;
+}
+
+.btn_anchor {
+  --border_style: solid #5bbd3a var(--border);
+  --bg_front_color: #95D44A;
+  --bg_shadow_color: #4B4B4B84;
+  --bg_back_color: #52A934;
+  --font_color: #3F8228;
+}
+
+.btn_danger {
+  --border_style: solid #531849 var(--border);
+  --bg_front_color: #8B3357;
+  --bg_shadow_color: #4B4B4B84;
+  --bg_back_color: #531849;
+  --font_color: #fff;
+}
+
+.btn_disabled {
+  --border_style: solid #838383 var(--border);
+  --bg_front_color: #C1C1C1;
+  --bg_shadow_color: #4B4B4B84;
+  --bg_back_color: #838383;
+  --font_color: #555753;
+}
+*/
  /* Colores */
     --bg-color: #991b1b;
     --drop-color: #991b1b;
