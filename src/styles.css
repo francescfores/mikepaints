@@ -251,10 +251,10 @@ ou can add global styles to this file, and also import other style files */
 }
 */
  /* Colores */
-    --bg-color: #991b1b;
-    --drop-color: #991b1b;
-    --wave-color: #991b1b;
-    --wave-small-color: #991b1b;
+    --bg-color: var(--color-bgPrim);
+    --drop-color: var(--color-bgPrim);
+    --wave-color: var(--color-bgPrim);
+    --wave-small-color: var(--color-bgPrim);
     /* Tamaños */
     --drop-size: 20px;
     --wave-size: min(40vw, 400px);
@@ -267,8 +267,8 @@ ou can add global styles to this file, and also import other style files */
     /* Velocidades - Sincronizadas */
     --drop-duration: 1s;
     --wave-duration: 1s; 
-    --bg:#FF6D00; 
-    --color:#fff; 
+    --bg:var(--color-bgPrim); 
+    --color:var(--color-bgPrim); 
     --dur:1s;
 }
 

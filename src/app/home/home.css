@@ -977,7 +977,7 @@ Colores y animaciones por panel */
 .image_3d_effect:hover .logo {
   transform: translate3d(0%, -15%, 370px) scale(1.2);
   filter: contrast(1) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.6));
-  transition: all 0.5s;
+  transition: all 1s;
 
 }
 
@@ -985,10 +985,10 @@ Colores y animaciones por panel */
   object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: .5s;
   overflow: hidden;
-  padding: 5px;
+  padding: 2px;
   /*background:
     linear-gradient(to right, violet, darkorchid);*/
 }
@@ -997,7 +997,7 @@ Colores y animaciones por panel */
   object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 0px;
   transition: .5s;
   overflow: hidden;
@@ -1009,19 +1009,18 @@ Colores y animaciones por panel */
   width: 100%;
   height: 100%;
   z-index: -1;
-  border-radius: 10px;
-  aspect-ratio: 1/1.1;
+  border-radius: 5px;
 }
 
 .image_3d_effect:hover .image_3d_effect_bg {
-  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(-85px);
   box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.22);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .image_3d_effect_bg::before,
 .image_3d_effect_bg::after {
-  border-radius: 10px;
+  border-radius: 5px;
   content: '';
   width: 100%;
   transition: all 0.7s;
@@ -1043,7 +1042,7 @@ Colores y animaciones por panel */
   bottom: 0;
   opacity: 1;
   width: 100%;
-  border-radius: 9px;
+  border-radius: 5px;
   height: 100%;
   background-image: linear-gradient(to bottom, transparent 40%, rgb(12, 13, 19, 0.5) 70%, rgb(12, 13, 19, .8) 100%)
 }

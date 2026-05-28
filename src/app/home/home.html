@@ -1,4 +1,4 @@
-<!--<app-splash-screen (animationComplete)="onSplashComplete()"></app-splash-screen>-->
+<app-splash-screen (animationComplete)="onSplashComplete()"></app-splash-screen>
 
 
 
@@ -23,7 +23,7 @@
                            <div class="oblique-inner">
                               <div class="image-wrapper">
                                  <div class="main-image">
-                                    <img style="object-position: top;" class="image-img" src="assets/mikepaints/images/minotauro.jpeg" alt="Figura 1">
+                                    <img style="object-position: top;" class="image-img" src="assets/mikepaints/images/marine3.jpeg" alt="Figura 1">
                                  </div>
                               </div>
                            </div>
@@ -58,7 +58,7 @@
                               <div class="image-wrapper">
                                  <div class="main-image">
 
-                                    <img class="image-img" src="assets/mikepaints/goku.jpg" alt="Figura 1">
+                                    <img class="image-img" src="assets/mikepaints/images/jiraya-Photoroom.png" alt="Figura 1">
                                  </div>
                               </div>
                            </div>
@@ -112,15 +112,15 @@
      </div>
      <div class="circle2 rounded-full w-[400px] h-[300px] bg-blue-400"></div>
    </section>
-   <section class="mx-auto max-w-screen-2xl px-4  mt-10 pb-20 md:px-20  w-full flex relative  section2_animation animate-fade-in-up animate-delay-200 animate-duration-600">
+   <section class="mx-auto max-w-screen-2xl   mt-10 pb-20 px-4 lg:px-20  w-full flex relative  section2_animation animate-fade-in-up animate-delay-200 animate-duration-600">
       <div class="flex relative w-full justify-center items-start">
          <div class="  w-2/6 div1  md:-mr-20   z-20  ">
          
             <img class="mask1 w-0 md:w-full  neon2 rounded z-10 relative" src="assets/mikepaints/images/minotauro-Photoroom.png" alt="">
 
          </div>
-         <div class="div2 w-full md:w-1/2 relative">
-            <img class=" w-full neon2 mask1 rounded z-10 relative" src="/assets/mikepaints/images/jiraya-Photoroom.png" alt="">
+         <div class="div2 w-full md:w-1/2 relative z-20 -mr-10">
+            <img class="-mr-10 w-full neon2 mask1 rounded z-10 relative" src="/assets/mikepaints/images/jiraya-Photoroom.png" alt="">
 
 
             <video class="hidden test2 framer-zxpwxw2 border border-textPrimary/70  rounded z-10 relative">
@@ -128,7 +128,7 @@
                               src="/assets/mikepaints/videos/enano.mp4">
                     </video>
          </div>
-         <div class="w-2/6 div3 md:-ml-20 z-20  ">
+         <div class="w-2/6 div3 md:-ml-25   ">
                      <img class="w-0 md:w-full  mask3 neon2 rounded z-10 relative" src="/assets/mikepaints/images/mewtwo-Photoroom.png" alt="">
 
          </div> 
@@ -173,20 +173,20 @@
            </div>
 
           </div>
-          <div class="w-full flex justify-end ">
-            <div class=" w-full max-w-[550px] h-full   grow 
-               w-full relative flex flex-col  ">
-               <figure  class="  image_3d_effect  object-cover ">
-                  <div class=" image_3d_effect_bg opacity-0 " >
-                     <img class="w-full " src="/assets/mikepaints/images/bakmarines2.jpg" alt="" >
-                  </div>
-                 
-                  <div>
-                     <img  class="logo absolute w-full bottom-0 absolute p-2 pb-24 z-30" src="/assets/mikepaints/images/marine3-Photoroom.png" alt="">
-                  </div>
-               </figure>
-              
-            </div>
+          <div class="w-full flex sm:justify-center md:justify-end ">
+            <div class=" w-full max-w-[650px] h-min grow p-10
+                        w-full relative flex flex-col  ">
+                        <figure  class="  image_3d_effect  object-cover ">
+                           <div class=" image_3d_effect_bg bg-orange-500  " >
+                              <img class="w-full " src="/assets/mikepaints/images/marine3.jpeg" alt="" >
+                           </div>
+                          
+                           <div>
+                              <img  class="logo absolute w-full bottom-0 absolute p-2 z-30" src="/assets/mikepaints/images/marine3-Photoroom.png" alt="">
+                           </div>
+                        </figure>
+                       
+                      </div>
           </div>
         </div>
 
@@ -196,62 +196,60 @@
 
    <section class="max-w-screen-2xl px-4 py-10 md:px-20 w-full flex relative    flex-col justify-end items-center
          section3_animation   gap-4">
-      <div class=" absolute mask w-full  h-full flex bg-bgPrim z-10">
-      </div>
-
-      <div class="w-full container mx-auto z-10">
-         <div class="w-full grid grid-cols-1 md:grid-cols-2 ">
-          <div class="w-full flex justify-start  ">
-            <div class=" w-full max-w-[550px] h-full grow 
-               w-full relative flex flex-col  ">
-               <figure  class="  image_3d_effect  object-cover ">
-                  <div class=" image_3d_effect_bg opacity-30 " >
-                     <img class="w-full " src="/assets/mikepaints/images/bakmarines2.jpg" alt="" >
-                  </div>
-                 
-                  <div>
-                     <img  class="logo absolute w-full bottom-0 absolute p-2 pb-24 z-30" src="/assets/mikepaints/images/marine3-Photoroom.png" alt="">
-                  </div>
-               </figure>
-              
-            </div>
+        
+      <div class="container mx-auto">
+        <div class="sm:flex sm:flex-col md:grid md:grid-cols-2 gap-6 sm:flex-col-reverse md:[direction:rtl]">
+          <div class="flex justify-center items-center md:[direction:ltr]">
+           <div class="w-full flex flex-col gap-12 md:items-end text-center md:text-end text-2xl justify-center ">
+                        <p class="  banco font-bold text-5xl mb-5" style=" background: linear-gradient(180deg,var(--color-primary) 0%, var(--color-secondary) 90%, var(--color-secondary) 100%);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;">Nuestras resinas</p>
+                      <p class="">En esta sección encontrarás resinas y estatuas impresas en 3D y pintadas a mano, trabajando con archivos licenciados oficialmente de creadores como <a href="https://www.patreon.com/cw/kaidan3d" class="text-blue-700">Kaidan 3d</a> y <a href="" class="text-blue-700">Nomnom Figures</a> accede a los enlaces para ver el listado de figuras. Ofrecemos tanto la impresión como el acabado completo de cada pieza, desde modelos de colección hasta estatuas premium con pintura detallada y acabados de alta calidad, cuidando cada proyecto para conseguir una presencia visual única</p>
+                   
+                       <div class="flex flex-wrap gap-2 justify-center md:justify-start gap-10">
+                           <a href="https://www.patreon.com/cw/NomnomFigures" class=" hidden p-1 rounded border border-textPrimary/80">
+                             <p>Contacto</p>
+                           </a>
+                          
+                           <button3d [type]="'btn_primary'" [border]="'2px'" class="w-[120px] mt-5" [rounded]="'4px'" [title]="''" font_size="16px"  [height]="'40px'" [width]="'100%'" [raise]="5">
+                            <a role="button" href="https://github.com/francescfores">
+                              <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
+                                <p>Contacto</p>
+                              </div>
+                            </a>
+                            </button3d>
+                         
+                         
+                          
+                          <button3d [type]="'btn_disabled'" [border]="'2px'" class="w-[120px] mt-5" [rounded]="'4px'" [title]="''" font_size="16px"  [height]="'40px'" [width]="'100%'" [raise]="5">
+                            <a role="button" href="https://github.com/francescfores">
+                              <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
+                                <p>Ver mas</p>
+                              </div>
+                            </a>
+                         </button3d>
+                       </div>
+                   </div>
           </div>
-          <div class="w-full flex flex-col gap-12 md:items-end text-center md:text-end text-2xl justify-center ">
-               <p class="  banco font-bold text-5xl mb-5" style=" background: linear-gradient(180deg,var(--color-primary) 0%, var(--color-secondary) 90%, var(--color-secondary) 100%);
-               -webkit-background-clip: text;
-               background-clip: text;
-               -webkit-text-fill-color: transparent;">Pintura resssinas</p>
-          <p class="">En esta sección encontrarás resinas y estatuas impresas en 3D y pintadas a mano, trabajando con archivos licenciados oficialmente de creadores como <a href="https://www.patreon.com/cw/kaidan3d" class="text-blue-700">Kaidan 3d</a> y <a href="" class="text-blue-700">Nomnom Figures</a> accede a los enlaces para ver el listado de figuras. Ofrecemos tanto la impresión como el acabado completo de cada pieza, desde modelos de colección hasta estatuas premium con pintura detallada y acabados de alta calidad, cuidando cada proyecto para conseguir una presencia visual única</p>
-       
-           <div class="flex flex-wrap gap-2 justify-center md:justify-start gap-10">
-               <a href="https://www.patreon.com/cw/NomnomFigures" class=" hidden p-1 rounded border border-textPrimary/80">
-                 <p>Contacto</p>
-               </a>
-              
-               <button3d [type]="'btn_primary'" [border]="'2px'" class="w-[120px] mt-5" [rounded]="'4px'" [title]="''" font_size="16px"  [height]="'40px'" [width]="'100%'" [raise]="5">
-                <a role="button" href="https://github.com/francescfores">
-                  <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
-                    <p>Contacto</p>
-                  </div>
-                </a>
-                </button3d>
-             
-             
-              
-              <button3d [type]="'btn_disabled'" [border]="'2px'" class="w-[120px] mt-5" [rounded]="'4px'" [title]="''" font_size="16px"  [height]="'40px'" [width]="'100%'" [raise]="5">
-                <a role="button" href="https://github.com/francescfores">
-                  <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
-                    <p>Ver mas</p>
-                  </div>
-                </a>
-             </button3d>
-           </div>
-
+          <div class="flex  justify-center items-center md:[direction:ltr]">
+              <div class="w-full flex sm:justify-center md:justify-start ">
+                      <div class=" w-full max-w-[650px] h-min grow p-10
+                        w-full relative flex flex-col  ">
+                        <figure  class="  image_3d_effect  object-cover ">
+                           <div class=" image_3d_effect_bg bg-orange-500 opacity-70 " >
+                              <img class="w-full " src="/assets/mikepaints/images/mewtwo.jpeg" alt="" >
+                           </div>
+                          
+                           <div>
+                              <img  class="logo absolute w-full bottom-0 absolute p-2 z-30" src="/assets/mikepaints/images/mewtwo-Photoroom.png" alt="">
+                           </div>
+                        </figure>
+                       
+                      </div>
+                   </div>
           </div>
-          
         </div>
-
-     
       </div>
     </section>
 
@@ -286,6 +284,7 @@
             </video>-->
       </div>
    </section>
+
 
 
    <section id="gallery" class="  w-full flex h-full justify-center px-4 py-20 md:px-20 ">
@@ -569,6 +568,101 @@
           </div>
 
         </div>
+      </div>
+    </section>
+
+
+
+ <section id="contact" class=" w-full flex h-full justify-center px-4 md:px-20 pt-20 ">
+      <div class="px-1 md:px-10   flex flex-col gap-2 z-50 justify-center items-center">
+        <p class="text-center  banco font-bold text-5xl mb-5" style=" background: linear-gradient(var(--color-secondary),var(--color-primary));
+               -webkit-background-clip: text;
+               background-clip: text;
+               -webkit-text-fill-color: transparent;">Contáctanos</p>
+        <p class="text-center  font-semibold text-3xl">Creamos detalles que marcan la diferencia</p>
+        <p class="text-center animate-slide-in-bottom animate-delay-400 animate-duration-600">Pintura personalizada, resinas y proyectos creativos hechos con pasión y precisión. Escríbenos y cuéntanos tu idea.</p>
+      </div>
+    </section>
+    <section class="max-w-screen-2xl gap-10 px-4 md:py-20 pt-10 pb-10 w-full flex   justify-center items-start flex-wrap">
+      <div class="flex-1 w-full md:w-2/3  flex  h-full relative">
+        <img style="  z-index: 2;mask:radial-gradient(150% 110% at 0% 0%,#000 42.85789695945946%,rgba(0,0,0,0) 100%) add;" class=" w-full h-full test border border-textPrimary/70  rounded " src="https://paintforge.es/wp-content/uploads/2023/06/wallpaperflare.com_wallpaper_scaled-scaled.jpg" alt="">
+        <!--
+            <app-map-example  class="w-full h-full test-map border border-textPrimary/70  rounded"></app-map-example>
+            -->
+      </div>
+      <div class="w-full md:w-1/3 justify-start  z-10 max-w-screen-2xl  flex flex-col flex-nowrap gap-4  ">
+        <div class="flex flex-col gap-4">
+          <p class="hidden">Dirección: Camí del Coll de Sta. Catalina, 115, 43500 Tortosa, Tarragona</p>
+          <div class="hidden w-full flex items-center gap-10 font-semibold">
+            <button3d [rounded]="'7px'" [title]="''" [bg_front_color]="'#25D366'" [bg_back_color]="'#188B42'" [border_style]="'solid #74E79E var(--border)'" font_size="14px" [font_body_weight]="'900'" [height]="'32px'" [width]="'50px'" [raise]="4">
+              <div class="flex gap-3  items-center uppercase">
+                <svg width="18" height="18" fill="#ffffff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                           <title>whatsapp</title>
+                           <path d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"></path>
+                        </g>
+                     </svg>
+              </div>
+            </button3d>
+            <p class="mb-2">+34 606 342 765</p>
+          </div>
+          <div class="w-full flex items-center gap-10 font-semibold">
+            <button3d [rounded]="'7px'" [title]="''" [bg_front_color]="'linear-gradient(45deg, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4)'" [bg_back_color]="'#9E1A55'" [border_style]="'solid #F4B9D3 var(--border)'" [type]="'btn_disabled'" font_size="14px" [font_body_weight]="'900'" [height]="'32px'" [width]="'50px'" [raise]="4">
+              <a href="https://www.instagram.com/mikes.paints/" target="__blank">
+                <div class="flex gap-3  items-center uppercase">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#ffffff"></path>
+                           <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#ffffff"></path>
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#ffffff"></path>
+                        </g>
+                     </svg>
+                </div>
+              </a>
+            </button3d>
+            <p class="mb-2">{{ '@mikes.paints' }}</p>
+          </div>
+          <div class="w-full flex items-center gap-10 font-semibold">
+            <button3d [rounded]="'7px'" [title]="''" [type]="'btn_disabled'" font_size="14px" [font_body_weight]="'900'" [height]="'32px'" [width]="'50px'" [raise]="4">
+              <div class="flex gap-3  items-center uppercase">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="18" height="18">
+                        <path fill="#FFF" d="M4.9,14L25,30.5L45.1,14v-3.7H4.9V14z M4.9,36.4l9.9-11l-9.9-8.9C4.9,16.6,4.9,36.4,4.9,36.4zM45.1,36.7L34.9,25.5L45,16.7L45.1,36.7L45.1,36.7z M25,33.7l-8.2-6.8L4.9,39.6h40.2L33.2,26.8L25,33.7z"></path>
+                     </svg>
+              </div>
+            </button3d>
+            <p class="mb-2">{{ 'mikepaints@outlook.com' }} </p>
+          </div>
+        </div>
+        <div class="relative   ">
+          <form>
+            <div class="mb-6">
+              <input type="text" placeholder="Nombre" class=" bg-transparent text-body-color focus:border-primary w-full rounded border py-1 px-[14px] text-base outline-none" />
+            </div>
+            <div class="mb-6">
+              <input type="email" placeholder="Email" class=" bg-transparent text-body-color focus:border-primary w-full rounded border py-1 px-[14px] text-base outline-none" />
+            </div>
+            <div class="mb-6">
+              <textarea rows="4" placeholder="Mensage" class=" bg-transparent text-body-color focus:border-primary w-full rounded border py-1 px-[14px] text-base outline-none"></textarea>
+            </div>
+            <div>
+              
+             
+              
+              <button3d [type]="'btn_disabled'" [border]="'2px'" class="w-[120px] mt-5" [rounded]="'4px'" [title]="''" font_size="16px"  [height]="'40px'" [width]="'100%'" [raise]="5">
+                <a role="button" href="https://github.com/francescfores">
+                  <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
+                    <p>Enviar</p>
+                  </div>
+                </a>
+             </button3d>
+            </div>
+          </form>
+        </div>
+
       </div>
     </section>
 </main>
