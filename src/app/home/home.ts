@@ -34,8 +34,8 @@ export class Home implements AfterViewInit {
     this.showSplash = true 
 
 
-  this.enableScroll();
-        this.showSplash =false ;
+  //this.enableScroll();
+   //     this.showSplash =false ;
   }
 
   ngAfterViewInit() {
@@ -44,8 +44,8 @@ export class Home implements AfterViewInit {
     this.section2_div2 = this.el.nativeElement.querySelector('.section2_animation .div2');
     this.section2_div3 = this.el.nativeElement.querySelector('.section2_animation .div3');
     this.circle2 = this.el.nativeElement.querySelector('.section3 .circle2');
-    this.enableScroll();
-        this.showSplash =false ;
+    //this.enableScroll();
+        //this.showSplash =false ;
 
   }
 
@@ -96,11 +96,9 @@ export class Home implements AfterViewInit {
 
   private disableScroll() {
     document.body.style.overflow = 'hidden';
-    document.body.style.height = '100%';
   }
 
   private enableScroll() {
     document.body.style.overflow = 'auto';
-    document.body.style.height = 'auto';
   }
 }
