@@ -975,7 +975,7 @@ Colores y animaciones por panel */
 }
 
 .image_3d_effect:hover .logo {
-  transform: translate3d(0%, -35%, 470px) scale(1.2);
+  transform: translate3d(0%, -15%, 370px) scale(1.2);
   filter: contrast(1) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.6));
   transition: all 0.5s;
 
