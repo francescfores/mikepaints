@@ -1,0 +1,71 @@
+
+.section4_animation div{
+  @apply flex ;
+  border-radius: 3px;
+}
+
+.section4_animation a{
+  @apply  w-full opacity-95;
+}
+
+.section4_animation a:hover{
+  @apply  w-full opacity-100;
+}
+.section4_animation img{
+  @apply  w-full;
+  border-radius: 3px;
+}
+.section4_animation {
+/*   mask: linear-gradient(0deg,rgba(0, 0, 0, 0.13) 5%,rgba(0, 0, 0, 0.527) 95%) add;
+ */}
+
+
+.section4_animation .div_back{
+/*   z-index: 100;
+ *//*   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 68%, rgba(0,0,0,1) 100%);
+ */ }
+    /* Custom glow effect */
+
+ .card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 1px;
+  background-color: #1e1e1e;
+  color: white;
+  box-shadow: 0 0 100px rgba(0, 255, 255, 0.3);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.8), 0 0 50px rgba(0, 255, 255, 0.6);
+  transform: scale(1.05);
+}
+
+.card h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.card p {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.scroll-container {
+  cursor: grab;
+  scroll-behavior: smooth;
+  user-select: none;
+  scrollbar-width: none; /* Firefox */
+}
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Edge */
+}
+.scroll-container:active {
+  cursor: grabbing;
+}
+
+.item {
+  display: inline-block;
+  margin-right: 10px;
+}

@@ -1,0 +1,40 @@
+<section class=" animate-fade-in animate-delay-200 animate-duration-600
+         overflow-x-hidden overflow-y-hidden section4_animation relative w-full h-[70vh]  xl:h-[100vh] flex
+         flex-col justify-start items-start gap-4">
+      <div class="hidden div_back fixed w-full h-full flex-col justify-center items-center absolute -mt-20 text-center ">
+        <p class=" text-6xl md:text-7xl font-semibold z-50"></p>
+        <div class="h-[25%] border border-blue-300 w-full"></div>
+        <div class="h-[25%] border border-blue-300 w-full"></div>
+        <div class="h-[25%] border border-blue-300 w-full"></div>
+        <div class="h-[25%] border border-blue-300 w-full"></div>
+      </div>
+      <div style="transform-origin: top" class="test div1 rounded-xl
+            space-x-2  w-full overflow-x-hidden overflow-y-hidden" data-framer-name="Sites" name="Sites">
+        <div class="flex gap-4 w-full">
+  <!-- Columnas -->
+  @for (column of groupedItems(); track $index) {
+    <div class="flex flex-col space-y-2 w-full">
+
+      <!-- Items dentro de la columna -->
+      @for (item of column; track item.id) {
+        
+        <div class="ssr-variant hidden-1u310t9">
+          <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
+            <div data-framer-background-image-wrapper="true">
+              <img 
+                decoding="async" 
+                sizes="394px" 
+                [src]="item.image" 
+                style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto"
+                loading="lazy"
+              >
+            </div>
+          </a>
+        </div>
+      }
+    </div>
+  }
+</div>
+
+      </div>
+    </section>

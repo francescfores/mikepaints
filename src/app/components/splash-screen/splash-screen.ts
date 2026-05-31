@@ -84,10 +84,10 @@ export class SplashScreen implements AfterViewInit {
       this.animationComplete.emit();
       epa2.classList.add('hidden');
 
-    }, 700); // Ajusta al tiempo de tu animación   
+    }, 200); // Ajusta al tiempo de tu animación   
    };
  
-    setTimeout(runStep2, 3000);
+    setTimeout(runStep2, 300);
   }
 
 

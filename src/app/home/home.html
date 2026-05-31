@@ -6,7 +6,6 @@
 
 
 
-
 <main [ngClass]="{ 'h-[100vh]': showSplash}" class="text-textPrimary relative bg-bgPrim flex justify-center items-center w-full flex-col z-0 overflow-hidden">
       
 
@@ -112,15 +111,16 @@
      </div>
      <div class="circle2 rounded-full w-[400px] h-[300px] bg-blue-400"></div>
    </section>
+
    <section class="mx-auto max-w-screen-2xl   mt-10 pb-20 px-4 lg:px-20  w-full flex relative  section2_animation animate-fade-in-up animate-delay-200 animate-duration-600">
       <div class="flex relative w-full justify-center items-start">
          <div class="  w-2/6 div1  md:-mr-20   z-20  ">
          
-            <img class="mask1 w-0 md:w-full  neon4 rounded z-10 relative" src="assets/mikepaints/images/minotauro-Photoroom.png" alt="">
+            <img class="mask1 w-0 md:w-full  neon3 rounded z-10 relative" src="assets/mikepaints/images/minotauro-Photoroom.png" alt="">
 
          </div>
          <div class="div2 w-full md:w-1/2 relative z-20 -mr-10">
-            <img class="-mr-10 w-full neon4 mask1 rounded z-10 relative" src="/assets/mikepaints/images/jiraya-Photoroom.png" alt="">
+            <img class="-mr-10 w-full neon2 mask1 rounded z-10 relative" src="/assets/mikepaints/images/jiraya-Photoroom.png" alt="">
 
 
             <video class="hidden test2 framer-zxpwxw2 border border-textPrimary/70  rounded z-10 relative">
@@ -129,7 +129,7 @@
                     </video>
          </div>
          <div class="w-2/6 div3 md:-ml-25   ">
-                     <img class="w-0 md:w-full  mask3 neon4 rounded z-10 relative" src="/assets/mikepaints/images/mewtwo-Photoroom.png" alt="">
+                     <img class="w-0 md:w-full  mask3 neon2 rounded z-10 relative" src="/assets/mikepaints/images/mewtwo-Photoroom.png" alt="">
 
          </div> 
 
@@ -142,7 +142,7 @@
 
       <div class="w-full container mx-auto z-10 ">
          <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-10 ">
-          <div class="w-full flex flex-col gap-4 md:items-end text-center md:text-end text-2xl justify-center ">
+          <div class="w-full flex flex-col gap-4 md:items-end text-center md:text-end text-xl justify-center ">
             <p class="text-center  banco font-bold text-5xl mb-5" style=" background: linear-gradient(180deg,var(--color-primary) 0%, var(--color-secondary) 90%, var(--color-secondary) 100%);
                -webkit-background-clip: text;
                background-clip: text;
@@ -173,7 +173,9 @@
            </div>
 
           </div>
-          <div class="w-full flex sm:justify-center md:justify-end ">
+            <app-carousel class="w-full"  [slides]="mySlides2" ></app-carousel>
+
+          <div class="hidden w-full flex sm:justify-center md:justify-end ">
             <div class=" w-full max-w-[650px] h-min grow p-10
                         w-full relative flex flex-col  ">
                         <figure  class="  image_3d_effect  object-cover ">
@@ -233,7 +235,9 @@
                    </div>
           </div>
           <div class="flex  justify-center items-center md:[direction:ltr]">
-              <div class="w-full flex sm:justify-center md:justify-start ">
+            <app-carousel class="w-full"  [slides]="mySlides" ></app-carousel>
+
+              <div class="hidden w-full flex sm:justify-center md:justify-start ">
                       <div class=" w-full max-w-[650px] h-min grow p-10
                         w-full relative flex flex-col  ">
                         <figure  class="  image_3d_effect  object-cover ">
@@ -267,7 +271,6 @@
       </div>
     </section>
 
-
    <section class="w-full md:w-4/6 max-w-screen-2xl px-4 py-10 md:px-20  section_animate_video overflow-hidden animate-fade-in-up animate-delay-200 animate-duration-600">
       <div class=" w-full flex justify-center items-start" style="transform-style: preserve-3d;  perspective: 50vh;">
         <!--<div class="video-alt_1-gradient"></div>
@@ -285,8 +288,6 @@
       </div>
    </section>
 
-
-
    <section id="gallery" class="  w-full flex h-full justify-center px-4 py-20 md:px-20 ">
       <div class="px-1 md:px-10   flex flex-col gap-2 z-50 justify-center items-center">
             <p class="text-center  banco font-bold text-5xl mb-5" style=" background: linear-gradient(180deg,var(--color-primary) 0%, var(--color-secondary) 90%, var(--color-secondary) 100%);
@@ -295,281 +296,17 @@
                -webkit-text-fill-color: transparent;">Galería</p>
         <p class="text-center  font-semibold text-3xl">Momentos que ruedan</p>
         <p class="text-center ">Revive los mejores momentos del skate fotos y videos <br> de nuestras clases, eventos y la energía de nuestra comunidad.</p>
-        <button3d class="w-[100px] mt-5" [rounded]="'4px'" [title]="''" [bg_front_color]="'#E03E3E'" [font_color]="'#fff'" [bg_back_color]="'#9E1A1A'" [border_style]="'solid #E87373 var(--border)'" font_size="12px" [font_body_weight]="'900'" [height]="'25px'" [width]="'100%'" [raise]="4">
-          <a role="button" href="https://github.com/francescfores">
-            <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
-              <p>Ver mas</p>
-            </div>
-          </a>
-        </button3d>
+          <button3d [type]="'btn_disabled'" [border]="'2px'" class="w-[120px] mt-5" [rounded]="'4px'" [title]="''" font_size="16px"  [height]="'40px'" [width]="'100%'" [raise]="5">
+                <a role="button" href="https://github.com/francescfores">
+                  <div class="w-full h-full gap-3 flex flex-nowrap justify-center items-center uppercase">
+                    <p>Ver mas</p>
+                  </div>
+                </a>
+             </button3d>
       </div>
     </section>
+            <app-gallery class="w-full"  [items]="mySlides3" [columnsCount]="6"  ></app-gallery>
 
-   <section class="hidden animate-fade-in animate-delay-200 animate-duration-600
-         overflow-x-hidden overflow-y-hidden section4_animation relative w-full h-[70vh]  xl:h-[150vh] flex
-         flex-col justify-start items-start gap-4">
-      <div class="hidden div_back fixed w-full h-full flex-col justify-center items-center absolute -mt-20 text-center ">
-        <p class=" text-6xl md:text-7xl font-semibold z-50"></p>
-        <div class="h-[25%] border border-blue-300 w-full"></div>
-        <div class="h-[25%] border border-blue-300 w-full"></div>
-        <div class="h-[25%] border border-blue-300 w-full"></div>
-        <div class="h-[25%] border border-blue-300 w-full"></div>
-      </div>
-      <div style="transform-origin: top" class="test div1
-            space-x-2  w-full overflow-x-hidden overflow-y-hidden" data-framer-name="Sites" name="Sites">
-        <div class="flex flex-col space-y-2 w-full" data-framer-name="Far Left" name="Far Left">
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/288462247_2401693230009041_8404672969010982130_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/448004317_1219849945803264_3862966259540462880_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/170113567_2048175058694195_1537461517382195437_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/169725088_2044978529013848_6973521404367393289_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/217431752_2122144191297281_6822480111318583199_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="flex flex-col space-y-2 w-full" data-framer-name="Left Mobile" name="Left Mobile">
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/343046095_3449167838686212_5031945259332501071_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/290730895_2412070795637951_4880143953380471024_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/326546877_3405674466314551_1106546943189397721_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/287086214_2395636533948044_7535527934670183247_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/288462247_2401693230009041_8404672969010982130_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-        </div>
-        <div class="flex flex-col space-y-2 w-full" data-framer-name="Left" name="Left">
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/324121782_576630890949922_9222517590395069648_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/356645973_1000886211032973_4026055882900040344_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/359786308_1007555860366008_7817205434170610859_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/373014475_1039415460513381_868632633789118611_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/378842692_1047298776391716_5565940234529446991_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-
-
-        </div>
-        <div class="flex flex-col space-y-2 w-full" data-framer-name="Center" name="Center">
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/185127135_2073515572826810_5077339199249092545_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/358686724_1005681253886802_6691392218711406634_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/378822244_1048519592936301_505277086442360844_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/359422549_1006994380422156_4605230852401003263_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/292278422_2420973634747667_6794479861597663749_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-
-        </div>
-        <div class="flex flex-col space-y-2 w-full" data-framer-name="Right Mobile" name="Right Mobile">
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/292479058_2420973618081002_4878188002736797020_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/448001959_1219636512491274_6362056245516501055_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/358686724_1005681253886802_6691392218711406634_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/207353534_2111868725658161_404738915174127844_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/354578711_993641441757450_3689941272740245820_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-        </div>
-        <div class="flex flex-col space-y-2 w-full" data-framer-name="Far Right" name="Far Right">
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/339761267_6194042470717346_2316269016197314618_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/LaPetja-logo-gran-blanc-transparent-pastilla.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/358137617_1007555843699343_6836297493579921777_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/291667512_2417153468463017_3009103008160250323_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-          <div class="ssr-variant hidden-1u310t9">
-            <a class="framer-rqxuj4 framer-1tnasrg" target="_blank">
-              <div data-framer-background-image-wrapper="true">
-                <img decoding="async" sizes="394px" src="/assets/images/lapetja/358632197_1007555863699341_5697890063664926773_n.jpg" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:cover;image-rendering:auto">
-              </div>
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </section>
 
 
 
@@ -583,14 +320,13 @@
         <p class="text-center animate-slide-in-bottom animate-delay-400 animate-duration-600">Pintura personalizada, resinas y proyectos creativos hechos con pasión y precisión. Escríbenos y cuéntanos tu idea.</p>
       </div>
     </section>
-    <section class="max-w-screen-2xl gap-10 px-4 md:py-20 pt-10 pb-10 w-full flex   justify-center items-start flex-wrap">
-      <div class="flex-1 w-full md:w-2/3  flex  h-full relative">
-        <img style="  z-index: 2;mask:radial-gradient(150% 110% at 0% 0%,#000 42.85789695945946%,rgba(0,0,0,0) 100%) add;" class=" w-full h-full test border border-textPrimary/70  rounded " src="https://paintforge.es/wp-content/uploads/2023/06/wallpaperflare.com_wallpaper_scaled-scaled.jpg" alt="">
-        <!--
-            <app-map-example  class="w-full h-full test-map border border-textPrimary/70  rounded"></app-map-example>
-            -->
-      </div>
-      <div class="w-full md:w-1/3 justify-start  z-10 max-w-screen-2xl  flex flex-col flex-nowrap gap-4  ">
+
+
+   
+    <section class="max-w-screen-2xl gap-10 px-4 md:px-20 md:py-20 pt-10 pb-10 w-full flex   justify-center items-start flex-wrap">
+
+    
+      <div class="w-full  justify-center items-center  z-10 max-w-screen-2xl  flex flex-col flex-nowrap gap-4  ">
         <div class="flex flex-col gap-4">
           <p class="hidden">Dirección: Camí del Coll de Sta. Catalina, 115, 43500 Tortosa, Tarragona</p>
           <div class="hidden w-full flex items-center gap-10 font-semibold">
@@ -626,7 +362,7 @@
             </button3d>
             <p class="mb-2">{{ '@mikes.paints' }}</p>
           </div>
-          <div class="w-full flex items-center gap-10 font-semibold">
+          <div class="hiddenw-full flex items-center gap-10 font-semibold">
             <button3d [rounded]="'7px'" [title]="''" [type]="'btn_disabled'" font_size="14px" [font_body_weight]="'900'" [height]="'32px'" [width]="'50px'" [raise]="4">
               <div class="flex gap-3  items-center uppercase">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="18" height="18">
@@ -637,7 +373,7 @@
             <p class="mb-2">{{ 'mikepaints@outlook.com' }} </p>
           </div>
         </div>
-        <div class="relative   ">
+        <div class="relative  hidden ">
           <form>
             <div class="mb-6">
               <input type="text" placeholder="Nombre" class=" bg-transparent text-body-color focus:border-primary w-full rounded border py-1 px-[14px] text-base outline-none" />
@@ -662,7 +398,14 @@
             </div>
           </form>
         </div>
-
+      </div>
+        <div class="hidden flex-1 w-full md:w-2/3  flex  h-full relative">
+        <img style="  z-index: 2;mask:radial-gradient(150% 110% at 0% 0%,#000 42.85789695945946%,rgba(0,0,0,0) 100%) add;" class="w-full h-full test borders border-textPrimary/70  rounded " src="/assets/mikepaints/images/marines.jpeg" alt="">
+        <!--
+            <app-map-example  class="w-full h-full test-map border border-textPrimary/70  rounded"></app-map-example>
+            -->
       </div>
     </section>
+
+
 </main>
