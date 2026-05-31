@@ -177,6 +177,206 @@ export class Home implements AfterViewInit {
       title: 'Tech Haven',
       description: 'Immerse yourself in the cutting edge of technology and innovation.'
     }
+    ,
+    {
+      id: 3,
+      image: '/assets/mikepaints/images/orco.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 1,
+      image: '/assets/mikepaints/images/ejercitotankes.jpeg',
+      title: 'Digital Prism',
+      description: 'Where geometry meets art in a stunning display of light and form.'
+    },
+     {
+      id: 3,
+      image: '/assets/mikepaints/images/minotauro.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 2,
+      image: '/assets/mikepaints/images/marine6.jpeg',
+      title: 'Tech Haven',
+      description: 'Immerse yourself in the cutting edge of technology and innovation.'
+    }
+    ,
+    {
+      id: 3,
+      image: '/assets/mikepaints/images/orco.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 1,
+      image: '/assets/mikepaints/images/ejercitotankes.jpeg',
+      title: 'Digital Prism',
+      description: 'Where geometry meets art in a stunning display of light and form.'
+    },
+     {
+      id: 3,
+      image: '/assets/mikepaints/images/minotauro.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 2,
+      image: '/assets/mikepaints/images/marine6.jpeg',
+      title: 'Tech Haven',
+      description: 'Immerse yourself in the cutting edge of technology and innovation.'
+    }
+    ,
+    {
+      id: 3,
+      image: '/assets/mikepaints/images/orco.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 1,
+      image: '/assets/mikepaints/images/ejercitotankes.jpeg',
+      title: 'Digital Prism',
+      description: 'Where geometry meets art in a stunning display of light and form.'
+    },
+     {
+      id: 3,
+      image: '/assets/mikepaints/images/minotauro.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 2,
+      image: '/assets/mikepaints/images/marine6.jpeg',
+      title: 'Tech Haven',
+      description: 'Immerse yourself in the cutting edge of technology and innovation.'
+    }
+    ,
+    {
+      id: 3,
+      image: '/assets/mikepaints/images/orco.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 1,
+      image: '/assets/mikepaints/images/ejercitotankes.jpeg',
+      title: 'Digital Prism',
+      description: 'Where geometry meets art in a stunning display of light and form.'
+    },
+     {
+      id: 3,
+      image: '/assets/mikepaints/images/minotauro.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 2,
+      image: '/assets/mikepaints/images/marine6.jpeg',
+      title: 'Tech Haven',
+      description: 'Immerse yourself in the cutting edge of technology and innovation.'
+    }
+    ,
+    {
+      id: 3,
+      image: '/assets/mikepaints/images/orco.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 1,
+      image: '/assets/mikepaints/images/ejercitotankes.jpeg',
+      title: 'Digital Prism',
+      description: 'Where geometry meets art in a stunning display of light and form.'
+    },
+     {
+      id: 3,
+      image: '/assets/mikepaints/images/minotauro.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 2,
+      image: '/assets/mikepaints/images/marine6.jpeg',
+      title: 'Tech Haven',
+      description: 'Immerse yourself in the cutting edge of technology and innovation.'
+    }
+    ,
+    {
+      id: 3,
+      image: '/assets/mikepaints/images/orco.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 1,
+      image: '/assets/mikepaints/images/ejercitotankes.jpeg',
+      title: 'Digital Prism',
+      description: 'Where geometry meets art in a stunning display of light and form.'
+    },
+     {
+      id: 3,
+      image: '/assets/mikepaints/images/minotauro.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 2,
+      image: '/assets/mikepaints/images/marine6.jpeg',
+      title: 'Tech Haven',
+      description: 'Immerse yourself in the cutting edge of technology and innovation.'
+    }
+    ,
+    {
+      id: 3,
+      image: '/assets/mikepaints/images/orco.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 1,
+      image: '/assets/mikepaints/images/ejercitotankes.jpeg',
+      title: 'Digital Prism',
+      description: 'Where geometry meets art in a stunning display of light and form.'
+    },
+     {
+      id: 3,
+      image: '/assets/mikepaints/images/minotauro.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 2,
+      image: '/assets/mikepaints/images/marine6.jpeg',
+      title: 'Tech Haven',
+      description: 'Immerse yourself in the cutting edge of technology and innovation.'
+    }
+    ,
+    {
+      id: 3,
+      image: '/assets/mikepaints/images/orco.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 1,
+      image: '/assets/mikepaints/images/ejercitotankes.jpeg',
+      title: 'Digital Prism',
+      description: 'Where geometry meets art in a stunning display of light and form.'
+    },
+     {
+      id: 3,
+      image: '/assets/mikepaints/images/minotauro.jpeg',
+      title: 'Neural Dreams',
+      description: 'AI-generated masterpieces that blur the line between human and machine creativity.'
+    },
+    {
+      id: 2,
+      image: '/assets/mikepaints/images/marine6.jpeg',
+      title: 'Tech Haven',
+      description: 'Immerse yourself in the cutting edge of technology and innovation.'
+    }
   ];
   constructor(
     private el: ElementRef, private renderer: Renderer2,
